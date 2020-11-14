@@ -1,0 +1,23 @@
+Graph G {
+    node [color="#000000", fontname="Ubuntu"];
+    A [fillcolor="#ff0000", style="filled"];
+    I [fillcolor="#00CC00",  style="filled"];
+    E [fillcolor="#00CC00",  style="filled"];
+    F [fillcolor="#00CC00",  style="filled"];
+    G [fillcolor="#00CC00",  style="filled"];
+    J [fillcolor="#00CC00",  style="filled"];
+    B [fillcolor="#0000DD",  style="filled"];
+    D [fillcolor="#0000DD",  style="filled"];
+    C [fillcolor="#0000DD",  style="filled"];
+    H [fillcolor="#0000DD",  style="filled"];
+	A -- B; 
+	A -- C;
+	B -- D;
+	B -- E;
+	B -- F;
+	C -- G;
+	C -- H;
+	D -- I;
+	H -- J;
+	
+}
