@@ -1,0 +1,34 @@
+# http://viz-js.com
+
+DiGraph G {
+    node [color="#000000", fontname="Ubuntu"];
+    "Mon_Site" [fillcolor="#ff0000", style="filled"];
+    "Autres_Pages" [fillcolor="#0000DD",  style="filled"];
+    "Doc_Divers" [fillcolor="#0000DD",  style="filled"];
+    "Images_du_Site" [fillcolor="#0000DD",  style="filled"];
+    "Style_CSS" [fillcolor="#0000DD",  style="filled"];
+    "accueil.html" [fillcolor="#00CC00",  style="filled"];
+    "page_1.html" [fillcolor="#00CC00",  style="filled"];
+    "page_2.html" [fillcolor="#00CC00",  style="filled"];
+    "page_3.html" [fillcolor="#00CC00",  style="filled"];
+    "Notice.pdf" [fillcolor="#00CC00",  style="filled"];
+    "Video.avi" [fillcolor="#00CC00",  style="filled"];
+    "image_01.jpg" [fillcolor="#00CC00",  style="filled"];
+    "image_02.jpg" [fillcolor="#00CC00",  style="filled"];
+    "image_03.jpg" [fillcolor="#00CC00",  style="filled"];
+    "image_04.jpg" [fillcolor="#00CC00",  style="filled"];
+    "image_05.jpg" [fillcolor="#00CC00",  style="filled"];
+    "Style_du_site.css" [fillcolor="#00CC00",  style="filled"];
+    "Mon_Site" -> "Autres_Pages" -> "page_1.html" 
+    "Autres_Pages" -> "page_2.html" 
+    "Autres_Pages" -> "page_3.html" 
+    "Mon_Site" -> "Doc_Divers" -> "Notice.pdf" 
+    "Doc_Divers" -> "Video.avi" 
+    "Mon_Site" -> "Images_du_Site" -> "image_01.jpg"  
+    "Images_du_Site" -> "image_02.jpg"  
+    "Images_du_Site" -> "image_03.jpg"  
+    "Images_du_Site" -> "image_04.jpg"  
+    "Images_du_Site" -> "image_05.jpg"  
+	"Mon_Site" -> "Style_CSS" -> "Style_du_site.css"
+	"Mon_Site" -> "accueil.html" 
+	}
