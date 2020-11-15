@@ -32,3 +32,7 @@ DiGraph G {
 	"Mon_Site" -> "Style_CSS" -> "Style_du_site.css"
 	"Mon_Site" -> "accueil.html" 
 	}
+# De quel type de parcours s'inspire l'énumération et la création des noeuds: Parcours en largeur
+# De quel type de parcours s'inspire l'énumération et la création des arêtes: Parcours en profondeur
+# De quel nature (racine, noeud interne, feuille) sont les dossiers: Racine et noeuds internes
+# De quel nature (racine, noeud interne, feuille) sont les fichiers: Feuilles
