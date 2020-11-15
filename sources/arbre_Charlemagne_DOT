@@ -24,7 +24,7 @@ digraph G {
 	E -> K;
 	E -> L;
 	E -> M;
-	E -> F;
-	E -> G;
+	A -> F;
+	A -> G;
 	
 }
