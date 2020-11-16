@@ -1,8 +1,8 @@
 Arbre_Charlemagne: On ne tient compte que de l'extrait donné ici. Pas de la totalité de la généalogie de Charlemagne!  
 Racine: A  
-Nombre de feuilles : 6  
+Nombre de feuilles : 10  
 Taille de l'arbre: 13  
-Hauteur de l'arbre: 3  
+Hauteur de l'arbre: 2 
 Nom du noeud qui a le plus de noeuds enfants: A  
 Arité de l'arbre: 6  
     
@@ -10,6 +10,6 @@ Arbre_exemple1:
 Racine: A  
 Nombre de feuilles : 5  
 Taille de l'arbre: 10  
-Hauteur de l'arbre: 4  
+Hauteur de l'arbre: 3  
 Nom du noeud qui a le plus de noeuds enfants: B   
 Arité de l'arbre: 3  
