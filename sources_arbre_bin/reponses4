@@ -1,7 +1,7 @@
 A quels lettres correspondent les mots bianires 000 puis 111 puis 000 : S O S
 Donnez le code binaire correspondant à N, S et I: 10 000 00
 Quelle est la hauteur de cet arbre? 5
-Combien de bits sont nécessaire pour encoder une lettre ou un chiffre en code Morse? 5 (Cela correspond à la hauteur de l'arbre)
+Combien de bits sont nécessaires pour encoder une lettre ou un chiffre en code Morse? 5 (Cela correspond à la hauteur de l'arbre)
 
 Le code bianire du 'A' est 01 : Ce qui correspond à 1 en valeur décimale
 Son enfant gauche 'R' a pour code 010 : Ce qui correspond à 2 en valeur décimale
