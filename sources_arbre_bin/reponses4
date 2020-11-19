@@ -1,0 +1,17 @@
+A quels lettres correspondent les mots bianires 000 puis 111 puis 000 : S O S
+Donnez le code binaire correspondant à N, S et I: 10 000 00
+Quelle est la hauteur de cet arbre? 5
+
+Le code bianire du 'A' est 01 : Ce qui correspond à 1 en valeur décimale
+Son enfant gauche 'R' a pour code 010 : Ce qui correspond à 2 en valeur décimale
+Son enfant droit 'W' a pour code 011 : Ce qui correspond à 3 en valeur décimale
+
+Le code bianire du 'M' est 11 : Ce qui correspond à 3 en valeur décimale
+Son enfant gauche 'G' a pour code 110 : Ce qui correspond à 6 en valeur décimale
+Son enfant droit 'O' a pour code 111 : Ce qui correspond à 7 en valeur décimale
+
+Soit un noeud dont le code binaire vaut la valeur n:
+Comment calculer la valeur bianire de son fils gauche? 2*n
+Comment calculer la valeur bianire de son fils droit? 2*n+1
+
+Remarque: Pour multiplier par 2 en bianire, on décale tous les chiffres d'un rang vers la droite, et on met un 0 sur le rang 0.
