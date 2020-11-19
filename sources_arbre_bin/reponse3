@@ -1,0 +1,18 @@
+M = Arbre('+')
+M.G = Arbre('-')
+M.D = Arbre('1')
+M.G.G = Arbre('*')
+M.G.D = Arbre('^')
+M.G.G.G = Arbre('+')
+M.G.G.D = Arbre('2')
+M.G.D.G = Arbre('3')
+M.G.D.D = Arbre('2')
+M.G.G.G.G = Arbre('2')
+M.G.G.G.D = Arbre('4')
+
+# Quelle est la nature des noeuds représentants des valeurs numériques? Des feuilles (éventuellement la racine M=4 par exemple)
+# Quelle est la nature des noeuds repésentants des opérateurs ? La racine et des noeuds internes
+# Quelle expression mathématique code cet arbre? M = (2+4)×2−3^2+1
+# Cet arbre binaire est-il complet ? Oui, chaque noeud à strictement 2 enfants ou 0 (pour les feuilles)
+# Donnez sa taille: 11
+# Donnez sa hauteur: 4
