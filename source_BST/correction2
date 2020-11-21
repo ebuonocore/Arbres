@@ -1,0 +1,8 @@
+Donnez le parcours infixe de l'Arbre_Binaire_de_Recherche_1 ci-dessus.  
+Parcours infixe: 4 6 10 12 15 23 64 72 99
+Remarque: Le parcours infixe génère la liste croissante des valeurs des noeuds
+Si on ajoute le noeud de valuer 11, de qui sera-t-il le fils? Gauche ou Droit ?  
+Le noeud de valeur 11 sera greffé sous le noeud de valeur 10. Il sera son fils droit pour respecter les règles des ABR.
+11 < 12 (On suit donc le chemin du fils gauche de la racine)
+11 > 6 (On suit donc le chemin du fils droit de 6)
+et 11 > 10 : On suit le chemin du fils droit de 10. Comme il n'a pas d'enfant droit, on le greffe là.
