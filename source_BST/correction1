@@ -1,4 +1,4 @@
-Combien de noeuds compte au minimum un arbre de hauteur 4: 2^4 soit 16 noeuds
+Combien de noeuds compte au minimum un arbre binaire équilibré de hauteur 4: 2^4 soit 16 noeuds
 
 Quelle est la hauteur minimale d'un arbre de 32 noeuds: log2(32) = 5  Un arbre de 32 noeuds a au moins une hauteur de 5
 
