@@ -1,0 +1,3 @@
+Le noeud de valuer 40 n'a rien à faire là!
+Sa valeur est inférieure à celle de son père. Il ne peut pas se trouver à sa droite.
+Pour réparer cet arbre, et qu'il devienne un ABR, il faudrait déplacer le noeud 40 et le greffé sur le fils droit du noeud 30.
