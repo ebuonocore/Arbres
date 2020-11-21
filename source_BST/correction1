@@ -1,9 +1,14 @@
-Combien de noeuds compte au minimum un arbre binaire équilibré de hauteur 4: 2^4 soit 16 noeuds
+Combien de noeuds compte au minimum un arbre binaire équilibré de hauteur 3: 2^3 soit 8 noeuds.
+Le noeud numéroté 1000 en base 2, soit 8 en décimale, se trouve à une profondeur de 3.
 
-Quelle est la hauteur minimale d'un arbre de 32 noeuds: log2(32) = 5  Un arbre de 32 noeuds a au moins une hauteur de 5
+Combien de noeuds compte au minimum un arbre binaire équilibré de hauteur 4: 2^4 soit 16 noeuds.
+Le noeud numéroté 10000 en base 2, soit 16 en décimale, se trouve à une profondeur de 4.
 
-Quelle est la hauteur minimale d'un arbre de 128 noeuds: log2(128) = 7  Un arbre de 128 noeuds a au moins une hauteur de 7
+Quelle est la hauteur minimale d'un arbre binaire de 32 noeuds: log2(32) = 5  Un arbre de 32 noeuds a au moins une hauteur de 5. 
+On peut remplir intégralement un arbre binaire de hauteur 4 avec 31 noeud, le 32ème se trouve à la profondeur 5.
 
-Quelle est la hauteur minimale d'un arbre de 127 noeuds: log2(32) < 7  Un arbre de 127 noeuds a au moins une hauteur de 6
-Remarque: Si avec 128 noeuds, je remplis complètement un arbre de hauteur 6 et j'ai un noeud supplémentaire à la hauteur 7,
-alors avec un noeud de moins (127 noeuds) je peux réussir à les rentrer dans une hauteur de 6.
+Quelle est la hauteur minimale d'un arbre binaire de 128 noeuds: log2(128) = 7  Un arbre de 128 noeuds a au moins une hauteur de 7
+On peut remplir intégralement un arbre binaire de hauteur 6 avec 127 noeud, le 128ème se trouve à la profondeur 7.
+
+Quelle est la hauteur minimale d'un arbre binaire de 127 noeuds: log2(32) < 7  Un arbre de 127 noeuds a au moins une hauteur de 6
+Avec 127 noeuds, je peux remplir intégralement un arbre binaire de hauteur 6.
