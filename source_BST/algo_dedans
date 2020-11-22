@@ -1,0 +1,12 @@
+Renvoie True si la clef est une des valeurs de l'arbre
+Sinon, renvoie False
+            
+Fonction dedans(self):
+  | Si la clef est trouvée sur ce noeud:
+  |    | Renvoie True
+  | Sinon, si la valeur de ce noeud > clef ET le fils_gauche n'est pas None:
+  |    | Renvoie la recherche de dedans sur le fils_gauche
+  | Sinon, si la valeur de ce noeud < clef ET le fils_droit n'est pas None:
+  |    | Renvoie la recherche de dedans sur le fils_droit
+  | Sinon:
+  |    | Renvoie False # Arrivé à une feuille (sans fils autre que None) et la clef n'a pas été trouvée
