@@ -8,6 +8,7 @@ class ABR():
         
     def __repr__(self):
         """ Méthode spéciales de la classe: renvoie une représentation de l'objet
+            Ici, on construit et on renvoie le parcours infixe
         """
         return (str(self.G)+str(self.label)+str(self.D)).replace('None','.')
     
