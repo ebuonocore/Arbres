@@ -1,0 +1,7 @@
+La Fonction minimum cherche la valeur du noeud à l'extrémité gauche de l'ABR
+
+Fonction minimum(self):
+  | Si fils_gauche est None:
+  |    | renvoie la valeur de self # Nous sommes arrivés au dernier noeud à gauche de l'ABR
+  | Sinon:
+  |    | renvoie fils_gauche.minimum() # On continue à explorer l'ABR vers la gauche
