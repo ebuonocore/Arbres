@@ -1,3 +1,4 @@
+Renvoie le minimum de l'ABR
 La Fonction minimum cherche la valeur du noeud à l'extrémité gauche de l'ABR
 
 Fonction minimum(self):
