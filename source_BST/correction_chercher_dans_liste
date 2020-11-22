@@ -1,0 +1,11 @@
+def chercher_dans_liste(clef:int, ma_liste:list)->bool:
+    """ Renvoie True si la valeur clef se trouve dans ma_liste.
+        Sinon, renoie False.
+    """
+    for element in ma_liste:
+        if element == clef:
+            return True
+    return False
+
+print(liste_valeurs)
+chercher_dans_liste(100,liste_valeurs) # Retestez votre fonction avec une valeur de clef qui apparait dans la liste
