@@ -1,0 +1,113 @@
+class ABR():
+    def __init__(self,label):
+        """ Méthode spéciale d'initialisation
+        """
+        self.label = label
+        self.G = None
+        self.D = None
+        
+    def __repr__(self):
+        """ Méthode spéciales de la classe: renvoie une représentation de l'objet
+        """
+        return (str(self.G)+str(self.label)+str(self.D)).replace('None','.')
+    
+    def hauteur(self):
+        """ Renvoie la hauteur de l'arbre 
+            c.à.d le maximum des hauteurs des deux sous-arbre + 1
+        """
+        if self.G is None:
+            hauteur_fils_gauche = 0 # 0 si le sous-arbre gauche est None
+        else:
+            hauteur_fils_gauche = self.G.hauteur() # Evalue la hauteur du sous-arbre gauche
+        if self.D is None:
+            hauteur_fils_droit = 0 # 0 si le sous-arbre droit est None
+        else:
+            hauteur_fils_droit = self.D.hauteur() # Evalue la hauteur du sous-arbre droit
+        return 1+max(hauteur_fils_gauche,hauteur_fils_droit) # Renvoie le maximum des hauteurs des deux sous-arbres + 1
+    
+    def taille(self):
+        """ Renvoie la taille de l'arbre 
+            c.à.d la taille des deux sous-arbre + 1
+        """
+        if self.G is None:
+            taille_fils_gauche = 0 # 0 si le sous-arbre gauche est None
+        else:
+            taille_fils_gauche = self.G.taille() # Evalue la taille du sous-arbre gauche
+        if self.D is None:
+            taille_fils_droit = 0 # 0 si le sous-arbre droit est None
+        else:
+            taille_fils_droit = self.D.taille() # Evalue la taille du sous-arbre droit
+        return 1+taille_fils_gauche+taille_fils_droit # Renvoie 1 + la taille des deux sous-arbres
+        
+    def dedans(self,clef):
+        """ Renvoie True si la clef est une des valeur de l'arbre
+            Sinon, renvoie False
+        """
+        # Si la clef est trouvée, renvoie True
+        if self.label==clef:
+            return True
+        # Si la valeur de ce noeud est supérieur à la clef, cherche si la clef est dans le sous-arbre gauche
+        elif self.label>clef and self.G is not None: 
+            return self.G.dedans(clef)
+        # Si la valeur de ce noeud est inférieur à la clef, cherche si la clef est dans le sous-arbre droit
+        elif self.label<clef and self.D is not None:
+            return self.D.dedans(clef)
+        else:
+            # Arrivé à une feuille (sans fils autre que None) et la clef n'a pas été trouvée: Renvoie False
+            return False
+
+    def ajouter(self,clef):
+        """ Insère la clef dans l'ABR
+            Précondition: La clef à insérer n'est pas dans l'ABR
+        """
+        assert not self.dedans(clef) # Programmation défensive. Plante si la clef est déjà dans l'ABR
+        # Si la valeur de ce noeud est supérieure à la clef 
+        if self.label>clef:
+            if self.G is None:
+                self.G = ABR(clef) # Si le fils gauche est None, on crée le noeud ici
+            else:
+                self.G.ajouter(clef) # Sinon, on ajoute la clef dans le sous-arbre gauche
+        # Si la valeur de ce noeud est supérieure à la clef 
+        elif self.label<clef:
+            if self.D is None: 
+                self.D = ABR(clef) # Si le fils droit est None, on crée le noeud ici
+            else:
+                self.D.ajouter(clef) # Sinon, on ajoute la clef dans le sous-arbre droit
+        else:
+            self=ABR(clef) 
+            
+    def minimum(self):
+        """ Renvoie le minimum de l'ABR
+        """
+        # Si le fils gauche n'est pas None alors renvoie du minimum du sous-arbre gauche
+        if self.G is None: # Si fils_gauche est None:
+            return self.label # # Nous sommes arrivés au dernier noeud à gauche de l'ABR
+        else:
+            # Sinon, on continue à explorer l'ABR vers la gauche
+            return self.G.minimum()
+    
+    def maximum(self):
+        """ Renvoie le maximum de l'ABR
+        """
+        # Si le fils droit n'est pas None alors renvoie du maximum du sous-arbre droit
+        if self.D is None:
+            return self.label
+        else:
+            return self.D.maximum()
+    
+if __name__ == "__main__":
+    ABR_ex1 = ABR(100)
+    ABR_ex1.ajouter(50)
+    ABR_ex1.ajouter(30)
+    ABR_ex1.ajouter(60)
+    ABR_ex1.ajouter(200)
+    ABR_ex1.ajouter(150)
+    ABR_ex1.ajouter(300)
+
+    print("Affichage de l'ABR:", ABR_ex1)
+    print("Minimum de l'ABR",ABR_ex1.minimum())
+    print("Maximum de l'ABR",ABR_ex1.maximum())
+    print("Taille de l'ABR",ABR_ex1.taille())
+    print("Hauteur de l'ABR",ABR_ex1.hauteur())
+    print("Est-ce que 200 est une valeur de l'ABR",ABR_ex1.dedans(200))
+    print("Est-ce que 34 est une valeur de l'ABR",ABR_ex1.dedans(34))
