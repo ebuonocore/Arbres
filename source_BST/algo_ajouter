@@ -1,0 +1,17 @@
+Insère la clef dans l'ABR
+Précondition: La clef à insérer n'est pas dans l'ABR
+
+Fonction ajouter(self):
+  | Programmation défensive: Plante si la clef est déjà dans l'ABR
+  | Si la valeur de ce noeud est supérieure à la clef :
+  |    | Si fils_gauche est None:
+  |    |    | fils_gauche <- ABR(clef) # On instancie l'ABR de valeur 'clef' et on l'affecte au fils_gauche
+  |    | Sinon:
+  |    |    | ajoute la clef dans le sous-arbre gauche
+  | Sinon, si a valeur de ce noeud est inférieure à la clef :
+  |    | Si fils_droit est None:
+  |    |    | fils_droit <- ABR(clef) # On instancie l'ABR de valeur 'clef' et on l'affecte au fils_droit
+  |    | Sinon:
+  |    |    | ajoute la clef dans le sous-arbre droit  
+  | Sinon:
+  |    | self <- ABR(clef) # On instancie l'ABR de valeur 'clef' et on l'affecte à ce noeud
