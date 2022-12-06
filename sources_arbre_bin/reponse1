@@ -1,4 +1,4 @@
- Codage de l'arbre binaire 2
+ Codage de l'arbre binaire strict Abr 2
 {   'A': ['B','C'],
     'B': ['D','E'],
     'C': ['F','G'],
